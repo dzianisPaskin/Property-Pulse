@@ -2,6 +2,7 @@ import Image from "next/image";
 import logo from "@/assets/images/logo.png";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  console.log(process.env.MONGODB_URI);
   return (
     <footer className="bg-gray-200 py-4 mt-24">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
